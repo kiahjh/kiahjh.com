@@ -12,13 +12,13 @@ export default function Home() {
       />
       <h2 className="text-gray-400 font-light text-lg mt-8 mb-1">Hey there!</h2>
       <h1 className="text-4xl text-gray-200 font-extralight">
-        I'm{' '}
+        I&apos;m{' '}
         <Link href="https://github.com/kiahjh" className="font-bold text-white">
           @kiahjh
         </Link>
       </h1>
       <h3 className="text-slate-400 text-lg font-light mt-16 text-center">
-        Here's what I'm currently spending most of my time on:
+        Here&apos;s what I&apos;m currently spending most of my time on:
       </h3>
       <div className="mt-4 flex justify-center gap-8 flex-wrap">
         <Project
