@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-pink-500 via-blue-500 to-white py-36 px-8 xs:px-12 relative flex flex-col">
+    <main className="h-screen bg-gradient-to-b from-pink-500 via-blue-500 to-white py-36 px-8 xs:px-12 relative flex flex-col overflow-hidden">
       <div
         className="absolute w-full h-full bottom-0 left-0 bg-cover bg-center [filter:contrast(170%)_brightness(1000%)]"
         style={{
@@ -33,64 +33,29 @@ export default function Home() {
         <Image
           src={ProfilePicture}
           alt={"picture of kiahjh"}
-          className="w-32 h-32 rounded-full object-cover object-center"
+          className="w-32 h-32 rounded-full object-cover object-center border-4 border-white shadow-xl shadow-cyan-400/50"
         />
-        <h2 className="text-black font-light text-lg mt-8 mb-1">Hey there!</h2>
-        <h1 className="text-4xl text-black font-extralight">
-          I&apos;m{" "}
-          <Link
-            href="https://github.com/kiahjh"
-            className="font-bold text-black"
-          >
-            @kiahjh
-          </Link>
-        </h1>
-        <h3 className="text-black text-lg font-light mt-16 text-center">
-          Here&apos;s what I&apos;m currently spending most of my time on:
-        </h3>
-        <div className="mt-4 flex justify-center gap-8 flex-wrap">
-          <Project
-            title={"Gertrude"}
-            description={`The best macOS internet safety and website blocker on the market.`}
-            githubUrl={"https://github.com/gertrude-app"}
-            url={"https://gertrude.app"}
-          />
-          <Project
-            title={"Friends Library"}
-            description={`Dedicated to the preservation and free distribution of early Quaker writings.`}
-            githubUrl={"https://github.com/friends-library"}
-            url={"https://friendslibrary.com"}
-          />
-          <Project
-            title={"The Ancient Path"}
-            description={`Writings and teachings of Jason R. Henderson.`}
-            githubUrl={"https://github.com/kiahjh/ancient-path"}
-            url={"https://hender.blog"}
-          />
-        </div>
-        <h3 className="text-black text-lg font-light mt-16 text-center">
-          Some other things I&apos;ve built:
-        </h3>
-        <div className="mt-4 flex justify-center gap-8 flex-wrap">
-          <Project
-            title={"next-bg-image"}
-            description={`Responsive, optimized, and accessible background images for Next.js. Made with @jaredh159.`}
-            githubUrl={"https://github.com/kiahjh/next-bg-image"}
-            url={"https://next-bg-image.kiahjh.com"}
-          />
-          <Project
-            title={"Canoe Creation Website"}
-            description={`A website for a local Christian canoeing/outdoor ministry.`}
-            githubUrl={"https://github.com/kiahjh/canoe-creation"}
-            url={"https://canoecreation.org"}
-          />
-          <Project
-            title={"Virtuoso Landscaping Website"}
-            description={`A website for a local landscaping company.`}
-            githubUrl={"https://github.com/kiahjh/virtuoso"}
-            url={"https://virtuosolandscapes.com"}
-          />
-        </div>
+        {/* <h2 className="text-black font-light text-lg mt-8 mb-1">Hey there!</h2> */}
+        {/* <h1 className="text-4xl text-black font-extralight"> */}
+        {/*   I&apos;m{" "} */}
+        {/*   <Link */}
+        {/*     href="https://github.com/kiahjh" */}
+        {/*     className="font-bold text-black" */}
+        {/*   > */}
+        {/*     @kiahjh */}
+        {/*   </Link> */}
+        {/* </h1> */}
+        {/* <h3 className="text-black text-lg font-light mt-16 text-center"> */}
+        {/*   Here&apos;s what I&apos;m currently spending most of my time on: */}
+        {/* </h3> */}
+        {/* <div className="mt-4 flex justify-center gap-8 flex-wrap"> */}
+        {/*   <Project */}
+        {/*     title={"Gertrude"} */}
+        {/*     description={`The best macOS internet safety and website blocker on the market.`} */}
+        {/*     githubUrl={"https://github.com/gertrude-app"} */}
+        {/*     url={"https://gertrude.app"} */}
+        {/*   /> */}
+        {/* </div> */}
       </div>
     </main>
   );
